@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Lift Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+    /*I gave my image an alt text and gave but buttons the button type
+    The user can scroll through the website using tab to traverse down and shift + tab to traverse up
+    I made it easier to see which element the user is on when traverssing with keyboard only and mouse and keyboard*/
+    </script>
+</head>
+<body onload="initialize();">
+    <banner>
+        <img src="img/logo.png" alt="logo">
+    </banner>
+    <div class="content">
+        <div class="list">Grocery List: <span id="groceries"></span></div>
+        <div class="buttons">
+        <div id="add">
+            Enter Item Name:<input type="text" id="itemname"/>
+            <button type="button" onclick="addGroceries();">Add Groceries</button>
+        </div>
+    
+        <div id="remove">
+            Enter Item Number:<input type="text" id="deleteitemnum"/>
+            <button type="button" onclick="deleteGroceries();">Delete Groceries</button>
+        </div>
+        
+        <div id="move">
+            Enter Item Number:<input type="text" id="moveitemNumber"/>
+            <button type="button" onclick="moveUp();">&#8593</button>
+            <button type="button" onclick="moveDown();">&#8595</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
